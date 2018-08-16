@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Controls="clr-namespace:BottomNavigationBar.Controls"
+             x:Class="BottomNavigationBar.Views.Page4">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White" RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Padding="5,0">
+                <StackLayout>
+                    <Controls:Label Text="Page 4"/>
+                </StackLayout>
+            </Grid>
+            <StackLayout BackgroundColor="LightGray" Padding="1" Grid.Row="1" VerticalOptions="End">
+                <Frame Padding="4" HorizontalOptions="FillAndExpand" HasShadow="False" BackgroundColor="White" CornerRadius="0">
+                    <Grid VerticalOptions="End" x:Name="GridFooter"/>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
